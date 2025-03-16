@@ -6,3 +6,5 @@ const SignUp_Layout = ({children}: {children:ReactNode}) =>{
         {children}
     </div>
 }
+
+export default SignUp_Layout;
