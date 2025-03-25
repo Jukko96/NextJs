@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import style from './page.module.css'
-import Link from "next/link";
+import NavMenu from "../_common/_components/NavMenu";
 
 const Before_layout = ({
     children,
@@ -12,9 +12,9 @@ const Before_layout = ({
 
     return <div className={style.container}>
         <section className={style.sidebar}>
-          <nav className={style.nav}><Link href={"/home"}>홈</Link></nav>  
-          <nav className={style.nav}><Link href={"/signin"}>로그인</Link></nav>  
-          <nav className={style.nav}><Link href={"/signup"}>회원가입</Link></nav>  
+          <NavMenu url={"/home"} text={"홈"}/>
+          <NavMenu url={"/signin"} text={"로그인"}/>
+          <NavMenu url={"/signup"} text={"회원가입"}/>
         </section>
         {children}
         {modal}

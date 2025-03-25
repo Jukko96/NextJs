@@ -23,3 +23,8 @@
 .nav {
     padding: 20px;
 }
+.nav_fill {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}
