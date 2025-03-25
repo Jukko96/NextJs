@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import style from './page.module.css'
+import Link from "next/link";
 
 const Before_layout = ({
     children,
@@ -10,7 +11,11 @@ const Before_layout = ({
 }) => {
 
     return <div className={style.container}>
-        메인 페이지 레이아웃
+        <section className={style.sidebar}>
+          <nav className={style.nav}><Link href={"/home"}>홈</Link></nav>  
+          <nav className={style.nav}><Link href={"/signin"}>로그인</Link></nav>  
+          <nav className={style.nav}><Link href={"/signup"}>회원가입</Link></nav>  
+        </section>
         {children}
         {modal}
     </div>
