@@ -1,3 +1,4 @@
+"use client"
 import { ReactNode } from "react";
 import style from './page.module.css'
 import NavMenu from "../_common/_components/NavMenu";
@@ -17,7 +18,7 @@ const Before_layout = ({
           <NavMenu url={"/home"} text={"홈"}/>
           <NavMenu url={"/signin"} text={"로그인"}/>
           <NavMenu url={"/signup"} text={"회원가입"}/>
-          {path_name !== "/signin" && (
+          {path_name !== "/extra" && (
             <NavMenu url="/extra" text="추가 메뉴" />
             )}
 
